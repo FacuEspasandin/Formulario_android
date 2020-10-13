@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="formulario">20dp</dimen>
+    <dimen name="titulo">40dp</dimen>
+    <dimen name="left">15dp</dimen>
+    <dimen name="right">20dp</dimen>
+    <dimen name="top">15dp</dimen>
+
+</resources>

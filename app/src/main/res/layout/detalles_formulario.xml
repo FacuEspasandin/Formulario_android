@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/left"
+    android:paddingTop="@dimen/top"
+    android:paddingRight="@dimen/right"
+    tools:context=".Detalles_formulario">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmar_datos"
+        android:textColor="@color/textPrimary"
+        android:textSize="@dimen/titulo"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="@dimen/formulario"
+        android:textColor="@color/textPrimary"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/fecha_nacimiento"
+            android:textSize="@dimen/formulario"
+            android:textColor="@color/textPrimary"
+            android:layout_gravity="center_vertical">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvFechaNac"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/formulario"
+            android:textColor="@color/textPrimary"
+            android:layout_gravity="center_vertical">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/telefono"
+            android:textSize="@dimen/formulario"
+            android:textColor="@color/textPrimary"
+            android:layout_gravity="center_vertical">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvTel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/formulario"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/formulario"
+            android:layout_gravity="center_vertical">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/formulario"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/formulario"
+            android:layout_gravity="center_vertical">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/formulario"
+            />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MiBotonRaised"
+        android:text="@string/editar"
+        android:onClick="editar">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</LinearLayout>
